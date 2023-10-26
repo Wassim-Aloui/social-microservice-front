@@ -6,6 +6,7 @@ import EventCreate from './Components/Event/EventCreate';
 import EventUpdate from './Components/Event/EventUpdate';
 import EventSearch from './Components/Event/EventSearch';
 import AddNews from './Components/News/create';
+import BlogPost from './Components/News/show';
 import DisplayNews from './Components/News/display';
 import UpdateNews from './Components/News/update';
 
@@ -24,7 +25,8 @@ function App() {
 
         <Route path="/news" element={<DisplayNews />} />
         <Route path="/addNews" element={<AddNews />} />
-        <Route path="/updateNews/:id" element={<UpdateNews />} />
+        <Route path="/news/updateNews/:id" element={<UpdateNews />} />
+        <Route path="news/blog/:id" element={<BlogPost/>} />
 
       </Routes>
     </div>
