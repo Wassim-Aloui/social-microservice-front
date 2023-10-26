@@ -62,7 +62,7 @@ export default function DisplayNews() {
       <br></br><br></br>
 
       <div class="latest-news mt-150 mb-150">
-        <h2>News List</h2>
+      <h1 style={{textAlign: "center", marginTop:"50px"}}>Update News</h1>
         <div class="container">
           <br></br>
           <button className="btn btn-success" onClick={() => handleAddEvent()}>
@@ -87,13 +87,7 @@ export default function DisplayNews() {
                         <p class="excerpt">{blog.description}</p>
                         <a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
                       </div>
-                      <button
-                        className="btn btn-warning mr-2"
-                        onClick={() => handleEditEvent(blog.id)}
-                      >
-                        
-                        Edit
-                      </button>
+                     
                       <Link to ={"updateNews/"+blog.id} className="btn btn-warning mr-2">Edit</Link>
                       <button
                           className="btn btn-danger"
