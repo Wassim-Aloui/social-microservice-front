@@ -38,7 +38,7 @@ export default function NavBar()
 										
 									</ul>
 								</li>
-								<li><a href="news.html">News</a>
+								<li><a href="/news">News</a>
 									<ul class="sub-menu">
 										<li><a href="news.html">News</a></li>
 										<li><a href="single-news.html">Single News</a></li>
