@@ -10,6 +10,9 @@ import BlogPost from './Components/News/show';
 import DisplayNews from './Components/News/display';
 import UpdateNews from './Components/News/update';
 
+import List from './Components/Category/List';
+import CatCreate from './Components/Category/CatCreate';
+
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
         <Route path="/EventCreate" element={<EventCreate />} />
         <Route path="/EventUpdate" element={<EventUpdate />} />
         <Route path="/EventSearch" element={<EventSearch />} />
+
+        <Route path="/catlist" element={<List />} />
+        <Route path="/addcat" element={<CatCreate />} />
 
         <Route path="/news" element={<DisplayNews />} />
         <Route path="/addNews" element={<AddNews />} />
