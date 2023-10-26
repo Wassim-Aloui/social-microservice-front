@@ -6,8 +6,12 @@ import EventCreate from './Components/Event/EventCreate';
 import EventUpdate from './Components/Event/EventUpdate';
 import EventSearch from './Components/Event/EventSearch';
 import AddNews from './Components/News/create';
+import BlogPost from './Components/News/show';
 import DisplayNews from './Components/News/display';
 import UpdateNews from './Components/News/update';
+
+import List from './Components/Category/List';
+import CatCreate from './Components/Category/CatCreate';
 
 
 function App() {
@@ -22,9 +26,13 @@ function App() {
         <Route path="/EventUpdate" element={<EventUpdate />} />
         <Route path="/EventSearch" element={<EventSearch />} />
 
+        <Route path="/catlist" element={<List />} />
+        <Route path="/addcat" element={<CatCreate />} />
+
         <Route path="/news" element={<DisplayNews />} />
         <Route path="/addNews" element={<AddNews />} />
-        <Route path="/updateNews/:id" element={<UpdateNews />} />
+        <Route path="/news/updateNews/:id" element={<UpdateNews />} />
+        <Route path="news/blog/:id" element={<BlogPost/>} />
 
       </Routes>
     </div>
