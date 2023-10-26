@@ -45,7 +45,7 @@ export default function NavBar()
 									</ul>
 								</li>
 								<li><a href="/EventList">Event</a></li>
-								<li><a href="contact.html">Contact</a></li>
+								<li><a href="/catlist">Categories</a></li>
 								<li><a href="shop.html">Shop</a>
 									<ul class="sub-menu">
 										<li><a href="shop.html">Shop</a></li>

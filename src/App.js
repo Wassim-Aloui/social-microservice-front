@@ -5,6 +5,9 @@ import EventList from './Components/Event/EventList';
 import EventCreate from './Components/Event/EventCreate';
 import EventUpdate from './Components/Event/EventUpdate';
 import EventSearch from './Components/Event/EventSearch';
+import List from './Components/Category/List';
+import CatCreate from './Components/Category/CatCreate';
+
 
 
 function App() {
@@ -17,6 +20,8 @@ function App() {
         <Route path="/EventCreate" element={<EventCreate />} />
         <Route path="/EventUpdate" element={<EventUpdate />} />
         <Route path="/EventSearch" element={<EventSearch />} />
+        <Route path="/catlist" element={<List />} />
+        <Route path="/addcat" element={<CatCreate />} />
 
       </Routes>
     </div>
