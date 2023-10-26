@@ -41,7 +41,8 @@ export default function UpdateNews(){
             <br></br>
       <br></br>
       <div className="container mt-4">
-        <h2>Update Blog</h2>
+        <br></br>
+      <h1 style={{textAlign: "center", marginTop:"50px"}}>Update News</h1>
         <form onSubmit={handleSubmit}>
           {/* <div className="mb-3">
             <label className="form-label">Event ID:</label>
@@ -65,7 +66,7 @@ export default function UpdateNews(){
       <br></br>
       <br></br>
 
-            <h1 style={{textAlign: "center", marginTop:"50px"}}>Update News</h1>
+            
             <Footer></Footer>
         </div>
     )
