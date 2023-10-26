@@ -1,6 +1,7 @@
 import NavBar from '../NavBar';
 import Footer from '../Footer';
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 
@@ -29,7 +30,7 @@ export default function DisplayNews() {
   }
 
   function handleEditEvent(id) {
-    window.location.href = `updateNews/${id}`;
+    window.location.href = `news/updateNews/${id}`;
   }
 
   function handleDeleteEvent(id) {
@@ -77,7 +78,7 @@ export default function DisplayNews() {
                 .map((blog) => (
                   <div key={blog.id} class="col-lg-4 col-md-6">
                     <div class="single-latest-news">
-                      <a href="single-news.html"><img src="/assets/img/x.jpg" alt="Image Alt Text" /></a>
+                      <Link to={"blog/"+blog.id}><img src="/assets/img/x.jpg" alt="Image Alt Text" /></Link>
                       <div class="news-text-box">
                         <h3><a href="single-news.html">{blog.titre}</a></h3>
                         <p class="blog-meta">
@@ -90,8 +91,10 @@ export default function DisplayNews() {
                         className="btn btn-warning mr-2"
                         onClick={() => handleEditEvent(blog.id)}
                       >
+                        
                         Edit
                       </button>
+                      <Link to ={"updateNews/"+blog.id} className="btn btn-warning mr-2">Edit</Link>
                       <button
                           className="btn btn-danger"
                           onClick={() => handleDeleteEvent(blog.id)}
