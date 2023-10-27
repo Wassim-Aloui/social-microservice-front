@@ -1,6 +1,9 @@
+import { Link } from 'react-router-dom';
+
 export default function NavBar() {
   return (
     <div>
+      
       <div className="top-header-area" id="sticker">
         <div className="container">
           <div className="row">
@@ -52,7 +55,23 @@ export default function NavBar() {
                         <li>
                           <a href="shop.html">Shop</a>
                         </li>
+                       
+                        
                       </ul>
+                    </li>
+                    
+                    <li>
+                     
+                      
+                        <Link to="/Ticket">Tickets</Link>                        
+                        
+                                            
+                      
+                    </li>
+                    <li>
+                      
+                        <Link to="/myTickets">My Tickets</Link>                        
+                      
                     </li>
                     <li>
                       <a href="news.html">News</a>
